@@ -1,6 +1,7 @@
 package com.spring.rest_services.controller;
 
 
+import com.spring.rest_services.medico.DadosAtualizarMedico;
 import com.spring.rest_services.medico.DadosCadastroMedico;
 import com.spring.rest_services.medico.DadosListagemMedico;
 import com.spring.rest_services.medico.Medico;
@@ -29,5 +30,12 @@ public class MedicoController {
     @GetMapping
     public Page<DadosListagemMedico> listar(@PageableDefault(size = 10, sort = {"nome"}) Pageable paginacao){
         return repositoryMedico.findAll(paginacao).map(DadosListagemMedico::new);
+    }
+
+    @PutMapping
+    @Transactional
+    public void atualizar(@RequestBody @Valid DadosAtualizarMedico dados){
+        var medico = repositoryMedico.getReferenceById(dados.id());
+        medico.atualizarInformacoes(dados);
     }
 }
