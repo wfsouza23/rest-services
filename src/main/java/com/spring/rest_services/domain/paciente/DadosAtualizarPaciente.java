@@ -1,6 +1,6 @@
-package com.spring.rest_services.paciente;
+package com.spring.rest_services.domain.paciente;
 
-import com.spring.rest_services.endereco.DadosEndereco;
+import com.spring.rest_services.domain.endereco.DadosEndereco;
 import jakarta.validation.constraints.NotNull;
 
 public record DadosAtualizarPaciente(

@@ -1,6 +1,4 @@
-package com.spring.rest_services.paciente;
-
-import com.spring.rest_services.medico.Medico;
+package com.spring.rest_services.domain.paciente;
 
 public record DadosListagemPaciente(Long id, String nome, String email){
 

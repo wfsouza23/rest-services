@@ -1,6 +1,6 @@
-package com.spring.rest_services.medico;
+package com.spring.rest_services.domain.medico;
 
-import com.spring.rest_services.endereco.Endereco;
+import com.spring.rest_services.domain.endereco.Endereco;
 import jakarta.persistence.*;
 import lombok.*;
 

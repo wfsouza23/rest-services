@@ -1,6 +1,6 @@
-package com.spring.rest_services.medico;
+package com.spring.rest_services.domain.medico;
 
-import com.spring.rest_services.endereco.Endereco;
+import com.spring.rest_services.domain.endereco.Endereco;
 
 public record DadosDetalhamentoMedico(Long id, String nome, String crm, String email, Especialidade especialidade, Endereco endereco) {
 

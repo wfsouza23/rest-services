@@ -1,4 +1,4 @@
-package com.spring.rest_services.endereco;
+package com.spring.rest_services.domain.endereco;
 
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;

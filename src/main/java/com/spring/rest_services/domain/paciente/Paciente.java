@@ -1,6 +1,6 @@
-package com.spring.rest_services.paciente;
+package com.spring.rest_services.domain.paciente;
 
-import com.spring.rest_services.endereco.Endereco;
+import com.spring.rest_services.domain.endereco.Endereco;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;

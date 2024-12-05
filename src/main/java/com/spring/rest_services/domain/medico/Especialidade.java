@@ -1,4 +1,4 @@
-package com.spring.rest_services.medico;
+package com.spring.rest_services.domain.medico;
 
 public enum Especialidade {
 
