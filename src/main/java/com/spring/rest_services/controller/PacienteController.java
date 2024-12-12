@@ -5,6 +5,7 @@ import com.spring.rest_services.domain.paciente.DadosCadastroPaciente;
 import com.spring.rest_services.domain.paciente.DadosListagemPaciente;
 import com.spring.rest_services.domain.paciente.Paciente;
 import com.spring.rest_services.repository.PacienteRepository;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/pacientes")
+@SecurityRequirement(name = "bearer-key")
 public class PacienteController {
 
     @Autowired
